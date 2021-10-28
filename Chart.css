@@ -47,7 +47,7 @@
     font-style: oblique;
     box-sizing:content-box;
     text-overflow: ellipsis;
-    margin-left: 430px;
+    /*margin-left: 430px;*/
     margin-top: 60px;
     height: 28px;
     width: 336px;
@@ -55,8 +55,8 @@
     
 .none{
     display: flex;
-    margin-bottom: 100px;
-    margin-left: 400px;
+   /* margin-bottom: 100px;*/
+   /* margin-left: 400px;*/
     position: relative;
     /*font-weight: bolder;*/
 }
@@ -85,10 +85,12 @@
    border-radius: 10px;
    margin-bottom: 15px;
    text-align: center;
-   font-size: 20px;
+   font-size: 20px; 
+   
 
 }
 
+ 
 .user_message{
    margin-left: auto;
    
@@ -101,16 +103,16 @@
    background-color: turquoise;
    border-radius: 10px;
    width: 130px;
-   margin-left: 200px;
+   cursor: pointer;
+   
 
 }
 
 .foot{
    padding: 10px;
-   height: 30px;
-   width: 300px;
    font-size: 20px;
    font-family:cursive;
+   flex: 1;
 
 }
 .footer{
@@ -119,5 +121,11 @@
    z-index: 0;
    left: 0;
    right: 0;
+   display: flex;
+   column-gap: 10px;
 }
 
+.container { 
+	height: 100vh;
+	display: flex;
+}
