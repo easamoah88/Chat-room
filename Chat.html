@@ -4,37 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD:Chat.html
     <title>Document</title>
     <link href="./Chat.css" rel="stylesheet">
+=======
+    <title>Bellicare</title>
+    <link href="./chart.css" rel="stylesheet">
+>>>>>>> 15cdcc6761aea79e90b8092d048d2a99d4df9e25:Chart.html
 </head>
 <body>
     <div class="container">
 
    <div class="body">
-       <p class="message">Hi</p>
-       <p class="message user_message">Hello</p>
-       <p class="message">Good morning</p>
-       <p class="message">How are you doing?</p>
-       <p class="message user_message">I'm fine</p>
-       <p class="message user_message">You</p>
-       <p class="message">By God's grace</p>
-       <p class="message user_message">We thank God</p>
-       <p class="message">Always</p>
-       <p class="message user_message">Yh</p>
-       <p class="message">How far with the project?</p>
-       <p class="message user_message">I'm still on it </p>
-       <p class="message">Please let me know when when you're done</p>
-       <p class="message user_message">No problem</p>
-
+		<div id="messagebody" style="height:90vh; overflow: auto">
+		   <p class="message">Hi</p>
+		   <p class="message user_message">Hello</p>
+		   <p class="message">Good morning</p>
+		   <p class="message">How are you doing?</p>
+		   <p class="message user_message">I'm fine</p>
+		   <p class="message user_message">You</p>
+		   <p class="message">By God's grace</p>
+		   <p class="message user_message">We thank God</p>
+		   <p class="message">Always</p>
+		   <p class="message user_message">Yh</p>
+		   <p class="message">How far with the project?</p>
+		   <p class="message user_message">I'm still on it </p>
+		   <p class="message">Please let me know when when you're done</p>
+		   <p class="message user_message">No problem</p>
+		   
+		</div>
 
     </div> 
     
     <div class="footer">
-            <input class="foot" type="text" placeholder="Name">            
-            <button class="fixed">Send</button>
+        <input class="foot" type="text" placeholder="Enter message" id="inputMessage">            
+        <button class="fixed"  id="sendMessage">Send</button>
     </div>
 
     </div>
+<<<<<<< HEAD:Chat.html
     </div>
+=======
+	
+	<script>
+		const inputMessage = document.querySelector('#inputMessage');
+		const sendMessage = document.querySelector('#sendMessage');
+		const messagebody = document.querySelector('#messagebody');
+		
+		sendMessage.addEventListener('click', function(){
+			const message = inputMessage.value;
+			const paragraph = document.createElement('p');
+			paragraph.classList.add('message');
+			paragraph.textContent=message;
+			messagebody.appendChild(paragraph);
+		})
+		
+	</script>
+	<script type="module">
+   
+  import { initializeApp  } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"; 
+  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
+  
+  const firebaseConfig = {
+    apiKey: "AIzaSyBzG2vlGtoeOFZpmSCxBFYnQG37c8eTEsk",
+    authDomain: "bellicare-48c30.firebaseapp.com",
+    projectId: "bellicare-48c30",
+    storageBucket: "bellicare-48c30.appspot.com",
+    messagingSenderId: "186260108061",
+    appId: "1:186260108061:web:284f10feea16c5838727f4",
+    measurementId: "G-YXYXZRL21F"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  const db = getDatabase();
+  
+
+function sendMessage() {
+  set(ref(db, 'users/' + 'user_234'), {
+    username: 'asiedu',
+    message: 'belinda@test.com',
+   });
+}
+
+function readMessage(){
+	const starCountRef = ref(db, 'users');
+	onValue(starCountRef, (data) => {
+		console.log(data.val());
+	});
+}
+ 
+</script>
+>>>>>>> 15cdcc6761aea79e90b8092d048d2a99d4df9e25:Chart.html
 </body>
 </html>

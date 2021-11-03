@@ -1,0 +1,20 @@
+{
+  "name": "Chart-room",
+  "version": "1.0.0",
+  "description": "Bellicare is web platform to help users anoynomously interact with health professionals.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asamoah88/Chart-room.git"
+  },
+  "keywords": [],
+  "author": "Henry Asiedu (https://oxen.com), Asamoah Ella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asamoah88/Chart-room/issues"
+  },
+  "homepage": "https://github.com/asamoah88/Chart-room#readme"
+}
