@@ -1,3 +1,25 @@
+.carding{
+    padding: 20px;
+}
+
+.heading{
+    text-align: right;
+    cursor: pointer;
+    padding: 10px;
+}
+.heading:visited{
+    color: green;
+}
+
+.heading:active{
+
+    padding: 20px;
+    color: red;
+    
+}
+
+
+
 #mag1{
     margin: 20px;
     margin-bottom: 10px;
@@ -12,20 +34,20 @@
     font-weight: bold;
 }
 
-#mag2{
+#mag2 {
+    width: 200px;   
     margin: 20px;
     background-color: rgb(142, 39, 238);
     padding: 10px;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor:pointer ;
-    border-width: 6px;
     border-radius: 10px;
     border-color: rgb(175, 70, 228);
     background-position: center;
     flex-direction: row-reverse;
     font-weight: bold;
-
+    border-width: 6px;
     
 }
 
@@ -42,9 +64,9 @@
 }
 #div1{
     font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
-    font-style: oblique;
+    font-style: normal;
     box-sizing:content-box;
     text-overflow: ellipsis;
     margin-left: 430px;
@@ -72,15 +94,24 @@
    box-sizing: border-box;
 }
 
+.container{
+    /*background-color: cornflowerblue;*/
+    background-position: center;
+    background-size: contain;
+    /*padding: 400px;*/
+    background-image: url(../ct.png)
+    
+
+}
 
 .body{
    justify-content: center;
 }
 
 .message{
-   background-color: darkcyan;
+   background-color: rgb(250, 224, 78);
    padding: 10px;
-   color:white;
+   color:black;
    width: fit-content;
    border-radius: 10px;
    margin-bottom: 15px;
@@ -102,8 +133,16 @@
    border-radius: 10px;
    width: 130px;
    margin-left: 200px;
+   border: rgb(158, 255, 30);
+   border-style: solid;
+   border-width: 3px;
 
 }
+
+.fixed:hover{
+    color: blanchedalmond;
+}
+
 
 .foot{
    padding: 10px;

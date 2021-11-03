@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./icons.css">
+    <link rel="stylesheet" href="./Nuel.css">
+    <script src="./jquery.js"></script>
+    <script src="./popper.js"></script>
+    <script src="./bootstrap.js"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+          </li>
+        </ul>
+      
+      </nav>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-darkt">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12" style="background-color:blueviolet">
+                <p class="font-weight-bold">hello</p>
+            </div>
+            <div class="col-md-6 col-lg-6" style="background-color:rgb(27, 158, 235)">
+                <p>utag</p>
+            </div>
+            <div class="col-md-12 col-lg-6" style="background-color:rgb(32, 238, 101)">
+                <p>ella miss u</p>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="container">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: cornflowerblue;" class="table-info">
+                    <td>Kwaku</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>Kwaku</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>Kwaku</td>
+                    <td>54</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <div class="container">
+        <img src="./Ella.jpg" alt="" class=" img-thumbnail" style="width: 250px;" height="250px">
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <p>dsdfgkhlj;jhgfdsghj </p>
+        </div>
+
+    </div>
+    <div class="alert alert-success">
+        <strong>Success!</strong> Indicates a successful or positive action.
+        <span class="bi bi-x" style="text-align: right;"></span>
+    </div>
+
+    <button class="btn btn-outline-primary">Login</button>
+
+    <h1>Notification
+        <span class="badge badge-danger">{counter}</span>
+    </h1>
+
+    <div class="loading">
+        <div id="childs" class="child"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar" id="child" style="width:20%"></div>
+    </div>
+    <br />
+
+    <div class="container">
+        <div class="spinner-border"></div>
+        <p>loading</p>
+    </div>
+
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+
+    <ul class="list-group">
+        <li class="list-group-item ">Active item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item active">Third item</li>
+    </ul>
+
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some example text. Some example text.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+
+    <div id="accordion">
+
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    Details
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum..
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                    Summary
+                </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum..
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                    Conclusion
+                </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum..
+                </div>
+            </div>
+        </div>
+
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+    </ul>
+
+
+</body>
+
+<script src="./main.js"></script>
+
+</html>
