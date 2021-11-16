@@ -1,0 +1,229 @@
+.carding{
+    padding: 20px;
+}
+
+.heading{
+    text-align: right;
+    cursor: pointer;
+    padding: 10px;
+}
+.heading:visited{
+    color: green;
+}
+
+.heading:active{
+
+    padding: 20px;
+    color: red;
+    
+}
+
+
+
+#mag1{
+    margin: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(81, 81, 238) ;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    cursor: pointer;
+    border-radius: 10px;
+    border-width: 6px;
+    border-color: rgb(84, 84, 228);
+    font-weight: bold;
+}
+
+#mag2 {
+    width: 200px;   
+    margin: 20px;
+    background-color: rgb(142, 39, 238);
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor:pointer ;
+    border-radius: 10px;
+    border-color: rgb(175, 70, 228);
+    background-position: center;
+    flex-direction: row-reverse;
+    font-weight: bold;
+    border-width: 6px;
+    
+}
+
+#mag1:hover{
+    color: white;
+    background-color: rgb(11, 11, 97);
+
+}
+
+#mag2:hover{
+    color: white;
+    background-color: rgb(52, 5, 97);
+
+}
+#div1{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing:content-box;
+    text-overflow: ellipsis;
+    margin-top: 60px;
+    height: 28px;
+    width: 336px;
+    padding: 12px;
+}
+    
+.paddd{
+    padding-top: 14px;
+    padding-right: 30px ;
+    padding-left: 30px ;
+    padding-bottom:14px ;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(65, 65, 236);
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+.new{
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.design{
+    color: white;
+    background-color: green;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.change{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.deco{
+    color: white;
+    background-color: rgb(52, 52, 248);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+
+}
+.main{
+    font-size: 20px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    padding: 10px;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.container { 
+	height: 100vh;
+	display: flex;
+    background-image: url(../ch.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+
+
+.none{
+    display: flex;
+    position: relative;
+    
+}
+
+.mag{
+    color: rgb(67, 67, 238);
+}
+
+.space{
+    margin-top: 20px;
+}
+
+
+
+*{ 
+    margin: 0;
+   padding: 0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   box-sizing: border-box;
+}
+
+  
+
+
+.body{
+   justify-content: center;
+}
+
+.message{
+   background-color: rgb(250, 224, 78);
+   padding: 10px;
+   color:black;
+   width: fit-content;
+   border-radius: 10px;
+   margin-bottom: 15px;
+   text-align: center;
+   font-size: 20px; 
+   
+}
+
+ 
+.user_message{
+   margin-left: auto;
+   
+}
+
+.fixed{
+   padding: 5px;
+   font-size:20px;
+   border: rgb(229, 224, 235);
+   background-color: turquoise;
+   border-radius: 10px;
+   width: 130px;
+   margin-left: 200px;
+   border: rgb(158, 255, 30);
+   border-style: solid;
+   border-width: 3px;
+   cursor: pointer;
+   
+}
+
+.fixed:hover{
+    color: blanchedalmond;
+}
+
+
+.foot{
+   padding: 10px;
+   font-size: 20px;
+   font-family:cursive;
+   flex: 1;
+
+}
+.footer{
+   position: fixed;
+   bottom: 0;
+   z-index: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   column-gap: 10px;
+}
+
